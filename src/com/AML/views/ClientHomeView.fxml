@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stkProducts" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" style="-fx-background-color: #212121;" stylesheets="@../../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.ClientHomeViewController">
+   <children>
+      <AnchorPane fx:id="rootContainer" prefHeight="200.0" prefWidth="200.0">
+         <children>
+              <HBox fx:id="searchProducts" layoutX="527.0" layoutY="18.0" prefHeight="47.0" prefWidth="311.0">
+                     <children>
+                        <FontAwesomeIconView fill="#d085f5" glyphName="SEARCH" opacity="0.5" size="30">
+                           <HBox.margin>
+                              <Insets right="10.0" top="1.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXTextField fx:id="Searchproduit" labelFloat="true" prefHeight="33.0" prefWidth="253.0" promptText="Search Products" styleClass="Searchproduit">
+                           <HBox.margin>
+                              <Insets right="2.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+            <HBox layoutX="13.0" layoutY="8.0" prefHeight="58.0" prefWidth="289.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Products " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Cambria Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="marketLabel" alignment="CENTER" contentDisplay="TOP" layoutX="60.0" layoutY="30.0" text="Market" textFill="#bf4cbf">
+                     <font>
+                        <Font name="Cambria Bold" size="29.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="158.0" layoutY="210.0" prefHeight="530.0" prefWidth="847.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="68.0">
+               <children>
+                  <ScrollPane fx:id="scrollbar" prefHeight="530.0" prefWidth="847.0" style="-fx-background: #212121;" styleClass="transparent" stylesheets="@style.css">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <Pane fx:id="Noproduct" layoutX="292.0" layoutY="155.0" prefHeight="220.0" prefWidth="235.0" visible="false">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="220.0" prefWidth="235.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/empty-list.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="No product found." textFill="WHITE">
+                                 <font>
+                                    <Font name="Fredoka One" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

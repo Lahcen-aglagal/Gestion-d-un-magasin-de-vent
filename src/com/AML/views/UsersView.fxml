@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stkUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" style="-fx-background-color: #212121;" stylesheets="@../../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.UsersViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="rootUsers" layoutX="14.0" layoutY="229.0" prefHeight="299.0" prefWidth="845.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <TableView fx:id="tblUsers" layoutX="137.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #212121;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+                      <TableColumn fx:id="colFullName" prefWidth="72.0" text="Full Name" />
+                        <TableColumn fx:id="colAdresse" minWidth="0.0" prefWidth="78.0" text="Adresse" />
+                        <TableColumn fx:id="colPostalCode" minWidth="0.0" prefWidth="78.0" text="Postal Code" />
+                        <TableColumn fx:id="colCity" minWidth="0.0" prefWidth="78.0" text="City" />
+                        <TableColumn fx:id="colPhoneNumber" minWidth="0.0" prefWidth="78.0" text="Phone Number" />
+                        <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="78.0" text="Email" />
+                        <TableColumn fx:id="colPassword" minWidth="0.0" prefWidth="78.0" text="Password" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="topAp" layoutX="37.0" layoutY="14.0" prefHeight="299.0" prefWidth="845.0" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="crudPane" layoutX="43.0" layoutY="14.0" prefHeight="247.0" prefWidth="733.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox layoutX="14.0" layoutY="258.0" prefHeight="40.0" prefWidth="523.0" spacing="60.0">
+                           <children>
+                              <JFXButton fx:id="btnAdd" onAction="#AddUsers" text="ADD">
+                                 <styleClass>
+                                    <String fx:value="crudBtn" />
+                                    <String fx:value="jfx-costume-button" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnUpdate" onAction="#UpdateUsers" text="Update">
+                                 <styleClass>
+                                    <String fx:value="crudBtn" />
+                                    <String fx:value="jfx-costume-button" />
+                                 </styleClass></JFXButton>
+                              <JFXButton fx:id="btnDelete" onAction="#DeleteUsers" text="Delete">
+                                 <styleClass>
+                                    <String fx:value="crudBtn" />
+                                    <String fx:value="jfx-costume-button" />
+                                 </styleClass></JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="64.0" layoutY="29.0" prefHeight="253.0" prefWidth="845.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox prefHeight="253.0" prefWidth="254.0" spacing="20.0">
+                                 <children>
+                                    <JFXTextField fx:id="txtFirstName" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="First Name" />
+                                    <JFXTextField fx:id="txtLastName" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="Last Name" />
+                                    <JFXTextField fx:id="txtPostalCode" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="Postal Code" />
+                                    <JFXTextField fx:id="txtCity" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="City" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="253.0" prefWidth="254.0" spacing="47.0">
+                                 <children>
+                                    <JFXTextField fx:id="txtPhoneNumber" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="Phone Number" />
+                                    <JFXTextField fx:id="txtEmail" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="Email" />
+                                    <JFXTextField fx:id="txtPassowrd" labelFloat="true" prefHeight="33.0" prefWidth="214.0" promptText="Password" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="253.0" prefWidth="334.0" spacing="47.0">
+                                 <children>
+                                    <JFXTextArea fx:id="txtAdresse" labelFloat="true" prefHeight="192.0" prefWidth="314.0" promptText="Adresse">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </JFXTextArea>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <HBox fx:id="searchPane" layoutX="568.0" layoutY="252.0" prefHeight="47.0" prefWidth="274.0">
+                     <children>
+                        <FontAwesomeIconView fill="#9145b6" glyphName="SEARCH" opacity="0.5" size="30">
+                           <HBox.margin>
+                              <Insets right="10.0" top="1.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXTextField fx:id="searchUsers" labelFloat="true" prefHeight="33.0" prefWidth="253.0" promptText="Search Users">
+                           <HBox.margin>
+                              <Insets right="2.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

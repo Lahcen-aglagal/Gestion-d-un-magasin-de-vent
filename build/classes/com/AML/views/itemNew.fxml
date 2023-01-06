@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clickHandle" prefHeight="215.0" prefWidth="250.0" styleClass="ayoub" stylesheets="@../../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.ItemNewController">
+   <children>
+      <VBox fx:id="vboxContainer" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="250.0" style="-fx-background-color: black;" stylesheets="@style.css">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="185.0">
+               <children>
+                  <Label fx:id="nameLabel" prefHeight="44.0" prefWidth="186.0" text="hp" textFill="WHITE">
+                     <font>
+                        <Font name="Fredoka One" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="priceLable" alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="141.0" text="\$0.99" textFill="#9145b6">
+                     <font>
+                        <Font name="Fredoka One" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="img" fitHeight="115.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox alignment="CENTER" prefHeight="64.0" prefWidth="225.0" spacing="8.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <JFXButton fx:id="btnAddCart" onAction="#AddToCart" prefHeight="32.0" prefWidth="139.0" styleClass="jfx-costume-button" text="Add to Cart">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="ayoub" />
+            <String fx:value="hoverHbox" />
+         </styleClass>
+      </VBox>
+   </children>
+</AnchorPane>

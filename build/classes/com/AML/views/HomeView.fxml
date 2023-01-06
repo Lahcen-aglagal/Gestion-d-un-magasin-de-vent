@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.HomeViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="rootwelcome" layoutX="329.0" layoutY="31.0" prefHeight="152.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="47.0" text="Welcome back" textFill="WHITE">
+                     <font>
+                        <Font name="Cookie-Regular" size="43.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox layoutY="192.0" prefHeight="179.0" prefWidth="845.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="rootTotalUsers" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #9145b6;">
+                     <children>
+                        <Label layoutX="73.0" layoutY="6.0" prefHeight="23.0" prefWidth="200.0" style="-fx-alignment: center; -fx-background-color: #9145b6; -fx-font-weight: bold;" text="Total Users" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <FontAwesomeIconView fx:id="fontUsers" fill="#9145b6" glyphName="USER" layoutX="73.0" layoutY="114.0" size="70" />
+                        <Label fx:id="totalUsers" layoutX="93.0" layoutY="152.0" style="-fx-alignment: center;" text="0" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootTotalProducts" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #9145b6;">
+                     <children>
+                        <Label layoutX="73.0" layoutY="6.0" prefHeight="23.0" prefWidth="200.0" style="-fx-alignment: center; -fx-background-color: #9145b6; -fx-font-weight: bold;" text="Total Products" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="totalProducts" layoutX="93.0" layoutY="152.0" style="-fx-alignment: center;" text="0" textFill="#fcfcfc" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <MaterialDesignIconView fill="#9145b6" glyphName="DESKTOP_MAC" layoutX="58.0" layoutY="61.0" size="70" textOrigin="TOP" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootTotalCategories" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #9145b6;">
+                     <children>
+                        <Label layoutX="73.0" layoutY="6.0" prefHeight="23.0" prefWidth="200.0" style="-fx-alignment: center; -fx-background-color: #9145b6; -fx-font-weight: bold;" text="Total Categories" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <FontAwesomeIconView fill="#9145b6" glyphName="LIST_ALT" layoutX="60.0" layoutY="114.0" size="70" />
+                        <Label fx:id="totalCategories" layoutX="93.0" layoutY="152.0" style="-fx-alignment: center;" text="0" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootTotalOrders" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #9145b6;">
+                     <children>
+                        <Label layoutX="73.0" layoutY="6.0" prefHeight="23.0" prefWidth="200.0" style="-fx-alignment: center; -fx-background-color: #9145b6; -fx-font-weight: bold;" text="Total Commands" textAlignment="RIGHT" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <FontAwesomeIconView fill="#9145b6" glyphName="OBJECT_GROUP" layoutX="58.0" layoutY="114.0" size="70" />
+                        <Label fx:id="totalCommandes" layoutX="93.0" layoutY="152.0" style="-fx-alignment: center;" text="0" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

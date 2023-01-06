@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="106.0" spacing="5.0" stylesheets="@../../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.QuantityController">
+   <children>
+      <JFXButton fx:id="btnMinus" onAction="#minusQuantity" styleClass="btn-quantity" text="-">
+         <HBox.margin>
+            <Insets bottom="5.0" />
+         </HBox.margin>
+      </JFXButton>
+      <JFXTextField fx:id="txtQuantity" alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="40.0" styleClass="text-quantity">
+         <HBox.margin>
+            <Insets bottom="20.0" />
+         </HBox.margin>
+      </JFXTextField>
+      <JFXButton fx:id="btnPlus" onAction="#PlusQuantity" styleClass="btn-quantity" text="+">
+         <HBox.margin>
+            <Insets bottom="5.0" />
+         </HBox.margin>
+      </JFXButton>
+   </children>
+</HBox>

@@ -1,0 +1,38 @@
+.dialog-pane{
+    -fx-background-color: #212121;
+    -fx-pref-height: 230px;
+    -fx-pref-width: 390px;
+}
+.header-panel{
+    -fx-background-color: #212121;
+}
+.label .text{
+    -fx-font-family: "Lora";
+    -fx-fill: #dc3545;
+    -fx-font-size: 30;
+}
+.content .text{
+    -fx-font-family: "Lora";
+    -fx-fill: white;
+    -fx-font-size: 15;
+}
+.button-bar .button:cancel{
+    -fx-font-family: "Lora";
+    -fx-background-color: #198754;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 100px;
+    -fx-font-size: 15;
+    -fx-cursor: hand;
+}
+.button-bar .button:default{
+    -fx-font-family: "Lora";
+    -fx-background-color: #fc0545;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 100px;
+    -fx-font-size: 15;
+    -fx-cursor: hand;
+}

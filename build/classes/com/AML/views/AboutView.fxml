@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane fx:id="stackHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.AboutViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane fx:id="titlePane" layoutX="203.0" layoutY="31.0" prefHeight="200.0" prefWidth="393.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="244.0" layoutY="50.0" prefHeight="55.0" prefWidth="106.0" text="AML" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Fredoka One" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="350.0" layoutY="48.0" prefHeight="58.0" prefWidth="286.0" text="BOUTIQUE" textFill="WHITE">
+                     <font>
+                        <Font name="Lobster Two" size="45.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="398.0" layoutX="260.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/under_title.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox fx:id="info" layoutX="364.0" layoutY="279.0" prefHeight="76.0" prefWidth="118.0" spacing="10.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="364.0">
+               <children>
+                  <TextFlow maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" textAlignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: " />
+                        <Text fill="WHITE" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.0" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="32.0" prefWidth="100.0" textAlignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright " textAlignment="CENTER" wrappingWidth="92.7373046875" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" size="14.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" 2022" />
+                     </children>
+                  </TextFlow>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AML.controllers.MainController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #9145B6;">
+         <children>
+            <AnchorPane fx:id="rootSideMenu" layoutX="64.0" layoutY="42.0" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #212121;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="31.0" layoutY="18.0" text="AML" textFill="WHITE">
+                     <font>
+                        <Font name="Fredoka One" size="40.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnDashboard" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="101.0" onAction="#homeWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <MaterialDesignIconView fill="#9145b6" glyphName="HOME" layoutX="3.0" layoutY="31.0" size="25" />
+                              <Label layoutX="33.0" layoutY="3.0" text="Dashboard" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle fx:id="rc" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCategories" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="161.0" onAction="#CategoriesWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="4.0" text="Categories" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#9145b6" glyphName="LIST_ALT" layoutX="3.0" layoutY="32.0" size="25" />
+                              <Rectangle fx:id="rc1" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnProducts" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="221.0" onAction="#ProductsWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="3.0" text="Products" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <MaterialDesignIconView fill="#9145b6" glyphName="DESKTOP_MAC" layoutX="3.0" layoutY="11.0" size="25" textOrigin="TOP" />
+                              <Rectangle fx:id="rc2" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUsers" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="281.0" onAction="#UsersWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="6.0" text="Users" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <MaterialDesignIconView fill="#9145b6" glyphName="ACCOUNT" layoutX="2.0" layoutY="34.0" size="30" />
+                              <Rectangle fx:id="rc3" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="34.0" layoutY="60.0" prefHeight="16.0" prefWidth="89.0" text="Boutique" textFill="WHITE">
+                     <font>
+                        <Font name="Special Elite Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnLogout" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="526.0" onAction="#LogoutWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane layoutX="-11.0" layoutY="-6.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="5.0" text="Logout" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <MaterialDesignIconView fill="#9145b6" glyphName="EXIT_TO_APP" layoutX="3.0" layoutY="33.0" size="25" />
+                              <Rectangle fx:id="rc4" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCommandes" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutY="336.0" onAction="#CommandesWindows" prefHeight="60.0" prefWidth="143.0" ripplerFill="WHITE" text=" " textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="6.0" text="Commandes" textFill="#e8d5d5">
+                                 <font>
+                                    <Font name="Amiri Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle fx:id="rc5" arcHeight="5.0" arcWidth="5.0" fill="#9145b6" height="60.0" layoutX="-11.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" visible="false" width="8.0" />
+                              <FontAwesomeIconView fill="#9145b6" glyphName="OBJECT_GROUP" layoutX="3.0" layoutY="34.0" size="25" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="rootContainer" layoutX="150.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #212121;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Circle fx:id="exit_circle" fill="RED" layoutX="986.0" layoutY="13.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: HAND;" />
+            <FontAwesomeIconView fx:id="exit_font" fill="WHITE" glyphName="CLOSE" layoutX="982.0" layoutY="16.0" size="10" style="-fx-cursor: HAND;" />
+            <Circle fx:id="minus_circle" fill="#10cd10" layoutX="968.0" layoutY="13.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: HAND;" />
+            <Label fx:id="minus_label" layoutX="964.0" layoutY="-1.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="-" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
